@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -105,7 +105,13 @@
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.0.0.M1</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.4.1-SNAPSHOT</version>
+        </plugin>
       </plugins>
+
     </pluginManagement>
   </build>
 
@@ -149,6 +155,12 @@
         <artifactId>mockito-core</artifactId>
         <version>1.8.5</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.1-SNAPSHOT</version>
+        <type>maven-plugin</type>
       </dependency>
     </dependencies>
   </dependencyManagement>
